@@ -115,7 +115,7 @@ def main():
         
         with col1:
             age = st.number_input("Age", min_value=10, max_value=100, step=1, help="Enter your age")
-            height = st.number_input("Height (cm)", min_value=100.0, max_value=250.0, step=0.1)
+            height = st.number_input("Height (in)", min_value=60.0, max_value=80.0, step=0.1)
             activity_level = st.selectbox(
                 "Activity Level",
                 options=["Sedentary", "Lightly Active", "Moderately Active", "Very Active", "Extremely Active"],
@@ -128,7 +128,7 @@ def main():
             )
 
         with col2:
-            weight = st.number_input("Weight (kg)", min_value=20.0, max_value=300.0, step=0.1)
+            weight = st.number_input("Weight (lb)", min_value=100.0, max_value=300.0, step=1.0)
             sex = st.selectbox("Sex", options=["Male", "Female", "Other"])
             fitness_goals = st.selectbox(
                 "Fitness Goals",
@@ -165,8 +165,8 @@ def main():
 
                     user_profile = f"""
                     Age: {age}
-                    Weight: {weight}kg
-                    Height: {height}cm
+                    Weight: {weight}lb
+                    Height: {height}in
                     Sex: {sex}
                     Activity Level: {activity_level}
                     Dietary Preferences: {dietary_preferences}
