@@ -1,1 +1,1 @@
-Health Fitness AI agent experiment using the Gemini LLM. A constant work in-progress.
+Health Fitness AI agent experiment using Streamlist & Gemini. A constant work in-progress.
